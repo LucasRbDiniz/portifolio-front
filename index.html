@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Lucas Diniz</h1>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="sobre">
+        <h2>Sobre</h2>
+        <p>Descrição breve sobre você e suas habilidades.</p>
+    </section>
+    <section id="projetos">
+        <h2>Projetos</h2>
+        <div class="galeria">
+            <div class="projeto">
+                <img src="projeto1.jpg" alt="Projeto 1">
+                <p>Descrição do Projeto 1</p>
+            </div>
+            <!-- Adicione mais projetos conforme necessário -->
+        </div>
+    </section>
+    <section id="contato">
+        <h2>Contato</h2>
+        <form action="submit_form.php" method="post">
+            <input type="text" name="nome" placeholder="Seu Nome">
+            <input type="email" name="email" placeholder="Seu Email">
+            <textarea name="mensagem" placeholder="Sua Mensagem"></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    <footer>
+        <p>Direitos autorais © Lucas Diniz 2024</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
