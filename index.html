@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio</title>
+    <title>Portfólio de [Seu Nome]</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Lucas Diniz</h1>
+        <h1>[Seu Nome]</h1>
         <nav>
             <ul>
                 <li><a href="#sobre">Sobre</a></li>
@@ -16,32 +16,59 @@
                 <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
+        <button id="theme-toggle">Modo Noturno</button>
     </header>
-    <section id="sobre">
-        <h2>Sobre</h2>
-        <p>Descrição breve sobre você e suas habilidades.</p>
-    </section>
-    <section id="projetos">
-        <h2>Projetos</h2>
-        <div class="galeria">
-            <div class="projeto">
-                <img src="projeto1.jpg" alt="Projeto 1">
-                <p>Descrição do Projeto 1</p>
+    <main>
+        <section id="sobre">
+            <h2>Sobre</h2>
+            <p>Descrição breve sobre você e suas habilidades. Adicione sua formação e qualquer outra informação relevante que diferencie você no mercado.</p>
+        </section>
+        <section id="projetos">
+            <h2>Projetos</h2>
+            <div class="galeria">
+                <div class="projeto">
+                    <img src="projeto1.jpg" alt="Projeto 1">
+                    <div class="descricao">
+                        <h3>Nome do Projeto 1</h3>
+                        <p>Pequena descrição sobre o que o projeto envolve, as tecnologias utilizadas e o objetivo alcançado.</p>
+                    </div>
+                </div>
+                <div class="projeto">
+                    <img src="projeto1.jpg" alt="Projeto 1">
+                    <div class="descricao">
+                        <h3>Nome do Projeto 1</h3>
+                        <p>Pequena descrição sobre o que o projeto envolve, as tecnologias utilizadas e o objetivo alcançado.</p>
+                    </div>
+                </div>
+                <div class="projeto">
+                    <img src="projeto1.jpg" alt="Projeto 1">
+                    <div class="descricao">
+                        <h3>Nome do Projeto 1</h3>
+                        <p>Pequena descrição sobre o que o projeto envolve, as tecnologias utilizadas e o objetivo alcançado.</p>
+                    </div>
+                </div>
+                <div class="projeto">
+                    <img src="projeto1.jpg" alt="Projeto 1">
+                    <div class="descricao">
+                        <h3>Nome do Projeto 1</h3>
+                        <p>Pequena descrição sobre o que o projeto envolve, as tecnologias utilizadas e o objetivo alcançado.</p>
+                    </div>
+                </div>
+                <!-- Mais projetos podem ser adicionados aqui -->
             </div>
-            <!-- Adicione mais projetos conforme necessário -->
-        </div>
-    </section>
-    <section id="contato">
-        <h2>Contato</h2>
-        <form action="submit_form.php" method="post">
-            <input type="text" name="nome" placeholder="Seu Nome">
-            <input type="email" name="email" placeholder="Seu Email">
-            <textarea name="mensagem" placeholder="Sua Mensagem"></textarea>
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
+        </section>
+        <section id="contato">
+            <h2>Contato</h2>
+            <form action="submit_form.php" method="post">
+                <input type="text" name="nome" placeholder="Seu Nome" required>
+                <input type="email" name="email" placeholder="Seu Email" required>
+                <textarea name="mensagem" placeholder="Sua Mensagem" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
     <footer>
-        <p>Direitos autorais © Lucas Diniz 2024</p>
+        <p>Direitos autorais © [Seu Nome] [Ano Atual]</p>
     </footer>
     <script src="scripts.js"></script>
 </body>

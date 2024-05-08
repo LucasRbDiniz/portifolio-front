@@ -1,39 +1,145 @@
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+/* Reset básico e estilos globais */
+body, h1, h2, h3, p, ul, li, figure, figcaption, blockquote, dl, dd {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+a {
+    color: #007bff;
+    text-decoration: none;
 }
 
+/* Cabeçalho */
 header {
-    background: #333;
-    color: #fff;
-    padding: 10px 20px;
-    text-align: center;
+    background-color: #0056b3;
+    color: white;
+    padding: 20px 0;
+    display: flex;            /* Usa Flexbox para alinhar os elementos */
+    justify-content: space-between; /* Distribui o espaço entre os elementos */
+    align-items: center;      /* Alinha os itens ao centro verticalmente */
+    padding: 10px 10%;        /* Padding horizontal para manter o conteúdo centralizado */
 }
-
 nav ul {
     list-style: none;
-    padding: 0;
+    display: flex;            /* Mantém os itens da navegação lado a lado */
+    margin: 0;                /* Remove a margem padrão */
+    padding: 0;               /* Remove o padding padrão */
 }
-
 nav ul li {
-    display: inline;
-    margin-right: 10px;
+    margin: 0 15px;           /* Espaço entre os links */
 }
 
+nav ul li a {
+    transition: color 0.3s; /* Suaviza a transição de cores */
+}
+
+nav ul li a:hover, nav ul li a:focus {
+    color: #ffdd57; /* Muda a cor no hover */
+}
+
+/* Botão de Modo Noturno */
+#theme-toggle {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 8px 16px;
+    transition: background-color 0.3s, color 0.3s; /* Suaviza as transições */
+}
+
+#theme-toggle:hover, #theme-toggle:focus {
+    background-color: #007bff; /* Muda a cor de fundo no hover */
+    color: #fff; /* Mantém a cor do texto */
+}
+
+/* Seções */
 section {
+    margin: 40px 0;
     padding: 20px;
-    margin: 0 10px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.projeto {
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+}
+.projeto img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+.descricao {
+    padding: 10px;
 }
 
-.galeria .projeto {
+/* Formulário de contato */
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
     margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    margin-top: 20px;
+    transition: background-color 0.3s, transform 0.2s; /* Adiciona transição e transformação */
 }
 
+form button:hover, form button:focus {
+    background-color: #007bff; /* Muda a cor de fundo no hover */
+    transform: scale(1.05); /* Aumenta ligeiramente o tamanho */
+}
+
+/* Rodapé */
 footer {
     text-align: center;
-    padding: 10px 0;
-    background: #333;
-    color: #fff;
+    padding: 20px 0;
+    background-color: #333;
+    color: white;
+}
+
+/* Modo Noturno */
+.dark-mode {
+    background-color: #121212;
+    color: #ccc;
+}
+
+.dark-mode header {
+    background-color: #1a1a1a;
+}
+
+.dark-mode nav ul li a:hover, .dark-mode nav ul li a:focus {
+    color: #ffdd57;
+}
+
+.dark-mode #theme-toggle:hover, .dark-mode #theme-toggle:focus {
+    background-color: #009bff; /* Cor mais clara para o modo noturno */
+}
+
+.dark-mode form button:hover, .dark-mode form button:focus {
+    background-color: #009bff; /* Cor mais clara para o modo noturno */
+}
+
+.dark-mode footer {
+    background-color: #0a0a0a;
 }
