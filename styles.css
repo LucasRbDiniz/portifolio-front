@@ -121,7 +121,6 @@ footer {
 /* Modo Noturno */
 .dark-mode {
     background-color: #121212;
-    color: #ccc;
 }
 
 .dark-mode header {
@@ -141,5 +140,5 @@ footer {
 }
 
 .dark-mode footer {
-    background-color: #0a0a0a;
+    background-color: #535353;
 }
